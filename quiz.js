@@ -4,7 +4,6 @@ let correctAnswer = "4";
 
 const selectedOption = document.querySelector('input[name="quiz"]:checked');
 const feedbackDiv = document.getElementById("feedback");
-if(selectedOption){
 
     const userAnswer = selectedOption.value;
 
@@ -13,9 +12,6 @@ if(userAnswer === correctAnswer){
 }
 else{
    feedbackDiv.textContent = "That's incorrect. Try again!"; 
-}}
-else {
-     feedbackDiv.textContent = "Please submit an answer"; 
 }}
 
 document.getElementById("submit-answer").addEventListener("click",checkAnswer)
